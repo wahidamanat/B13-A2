@@ -18,7 +18,7 @@
     <nav class="flex justify-around bg-[#1A0B2E] text-[#ffffff] ">
 
         <div class="text-4xl font-bold my-[30px]">Tech<span
-                class="bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent">Wave</span>
+                class="bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent">Wave</span>
         </div>
         <div class="flex gap-8 text-4 font-medium my-9">
             <a href="#About" class="hover:text-white transition">About</a>
@@ -26,29 +26,45 @@
             <a href="#Host" class="hover:text-white transition">Host</a>
         </div>
         <button
-            class="bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] hover:bg-blend-soft-light px-4 py-[12.5px] rounded-4xl my-6 text-base font-semibold hover:opacity-90 transition cursor-pointer">
+            class="bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] hover:bg-blend-soft-light px-4 py-[12.5px] rounded-4xl my-6 text-base font-semibold hover:opacity-90 transition cursor-pointer">
             Subscribe ➜
         </button>
     </nav>
 
 
     <!-- Hero section -->
-    <header>
-        <div>
-            <div>
-                <img src="./assets/hero-circle.png" alt="hero-circle -bg."><img src="./assets/microphone.png" alt="">
-        
-            <h1>
+    <header
+        class="relative w-full h-[850px] bg-[url(./assets/hero-bg.png)] bg-cover bg-center flex flex-col items-center justify-center text-center px-4">
+        <div class="relative w-[360px] h-[360px] flex justify-center items-center mb-4">
+
+            <div class="absolute inset-0 rounded-full bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] opacity-100 ">
+                <img src="./assets/hero-circle.png" alt="hero-circle -bg" class="absolute inset-0 w-full h-full object-contain">
+                <img src="./assets/microphone.png" alt="microphone" class="relative z-10 w-40 drop-shadow-2xl">
+                <span class="absolllute top-6 right-8 bg-[#00FF88] text-black text-sm py-1 rounded-4xl  ">
+                    New
+                </span>
+            </div>
+
+
+            <div class="flex gap-6">
+                <h1 class="text-6xl font-extrabold text-[#ffffff] mb-2 ">
                 TechWave
             </h1>
-            <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
-            <button>
-Listen on Spotify
+
+            <p class="text-base text-[#ffffff] font-regular mb-6">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+            </div>
+
+            <div class="flex gap-2">
+                <button class="flex">
+                    <img src="./assets/spotify.png" alt="Spotify Logo" class="w-5">
+                Listen on Spotify
             </button>
 
-            <button>
-Subscribe
+                <button class="flex">
+                    <img src="./assets/message.png" alt="subscribe Logo" class=""> 
+                Subscribe
             </button>
+            </div>
         </div>
 
 
