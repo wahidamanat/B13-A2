@@ -16,19 +16,26 @@
 <body class="bg-[#1A0B2E] text-white">
     <!-- navbar -->
     <nav
-        class="mx-auto flex justify-around bg-[#1A0B2E] text-[#ffffff] items-center py-4 px-6 w-full border-b border-white/10">
+        class="mx-auto flex justify-between md:justify-around bg-[#1A0B2E] text-[#ffffff] items-center py-4 px-6 md:py-4 md:px-1 w-full border-b border-white/10">
 
-        <div class="text-5xl font-bold my-[30px]">Tech<span
+        <div class="text-3xl md:text-5xl font-bold my-1 md:my-[30px]">Tech<span
                 class="bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent">Wave</span>
         </div>
-        <div class="flex gap-10 text-4 font-medium my-9 text-[#ffffff]/90">
+        <div class=" hidden md:flex gap-10 text-base font-medium my-9 text-[#ffffff]/90">
             <a href="#About" class="hover:text-white transition">About</a>
             <a href="#Episodes" class="hover:text-white transition">Episodes</a>
             <a href="#Host" class="hover:text-white transition">Host</a>
         </div>
+        <!-- button for mobile -->
         <button
-            class="bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] hover:bg-blend-soft-light px-4 py-3 rounded-4xl my-6 text-base font-semibold hover:opacity-90 transition cursor-pointer">
+            class="hidden md:block bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] hover:bg-blend-soft-light px-4 py-3 rounded-4xl my-6 text-base font-semibold hover:opacity-90 transition cursor-pointer">
             Subscribe ➜
+        </button>
+
+        <!-- button for medium to large screens -->
+        <button class="block md:hidden text-[#ffffff] hover:text-gray-300 transition cursor-pointer">
+               <img src="./assets/hamburger-menu.png" class="w-8 h-8 object-contain " fill="none"  >
+ 
         </button>
     </nav>
 
@@ -250,7 +257,7 @@
                         routines
                         and what to expect in the
                         next decade.</p>
-                    <div class=" flex items-center gap-2 text-[#00FF88] font-semibold text-base"> 
+                    <div class=" flex items-center gap-2 text-[#00FF88] font-semibold text-base">
                         <img src="./assets/clock.png" alt="">42 min
                     </div>
                 </div>
@@ -274,7 +281,8 @@
 
                 <div class="p-6 flex flex-col grow gap-4">
                     <h3 class="text-2xl font-bold mb-2">Building Better Habits for Remote Work</h3>
-                    <p class=" text-[#ffffff]/60 text-base leading-relaxed mb-3">Practical strategies for staying productive and maintaining work-life
+                    <p class=" text-[#ffffff]/60 text-base leading-relaxed mb-3">Practical strategies for staying
+                        productive and maintaining work-life
                         balance in a remote
                         environment.</p>
                     <div class="flex items-center gap-2 text-[#00FF88] font-semibold text-base">
@@ -303,7 +311,8 @@
                 <div class="p-6 flex flex-col grow gap-4">
 
                     <h3 class="text-2xl font-bold mb-2">Career Growth in Tech: A Roadmap</h3>
-                    <p class=" text-[#ffffff]/60 text-base leading-relaxed mb-3">Expert advice on navigating your tech career from junior developer to
+                    <p class=" text-[#ffffff]/60 text-base leading-relaxed mb-3">Expert advice on navigating your tech
+                        career from junior developer to
                         senior leadership roles.</p>
                     <div class="flex items-center gap-2 text-[#00FF88] font-semibold text-base">
                         <img src="./assets/clock.png" alt="">51 min
